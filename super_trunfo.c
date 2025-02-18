@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char *argv[]) {
+int main() {
 	
 	// Estrutura da carta
 	
@@ -21,7 +18,7 @@ int main(int argc, char *argv[]) {
 	
 	printf("Digite a letra do estado: ");
 	scanf("Estado: %c\n", &estado);
-	
+
 	printf("Digite o código da carta: ");
 	scanf("Código: %s\n", &codigo);
 	
