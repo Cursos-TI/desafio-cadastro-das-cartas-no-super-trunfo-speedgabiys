@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	
 	// Cadrastro da Carta 1
 
-    prinft("Carta 1\n");
+    printf("Carta 1\n");
 	
 	printf("Digite a letra do estado: ");
 	scanf("Estado: %c\n", &estado);
@@ -32,23 +32,23 @@ int main(int argc, char *argv[]) {
 	scanf("População:%d\n", &populacao);
 	
 	printf("Digite a área (em km2): ");
-	scanf("area:%e\n", area);
+	scanf("area: %f\n", &area);
 	
 	printf("Digite o PIB (em bilhões): ");
-	scanf("PIB: %.2f\n", &pib);
+	scanf("PIB: %f\n", &pib);
 	
 	printf("Digite o número de pontos_turísticos: ");
 	scanf("Pontos Turísticos: %d\n", &pontos_turisticos);
 	
 	// Cadastro da Carta 2
 
-    prinft("carta 2\n");
+    printf("carta 2\n");
 	
 	printf("Digite a letra do estado: ");
 	scanf("Estado: %c\n", &estado);
 	
 	printf("Digite o código da carta: ");
-	scanf("Código: %d\n", &codigo);
+	scanf("Código: %s\n", &codigo);
 	
 	printf("Digite o nome da cidade: ");
 	scanf("Cidade: %s\n", cidade);
@@ -57,10 +57,10 @@ int main(int argc, char *argv[]) {
 	scanf("População: %d\n", &populacao);
 	
 	printf("Digite a área (em km2): ");
-	scanf("Área: %.2f\n", &area);
+	scanf("Área: %f\n", &area);
 	
 	printf("Digite o PIB (em bilhões): ");
-	scanf("PIB: %.2f\n", &pib);
+	scanf("PIB: %f\n", &pib);
 	
 	printf("Digite o número de pontos turísticos: ");
 	scanf("Pontos Turísticos: %d\n", &pontos_turisticos);

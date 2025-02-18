@@ -3,5 +3,33 @@
     // Focalizar para exibir as descrições dos atributos existentes.
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        
+        {
+        "name": "Depurar C",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/super_trunfo",
+        "args": [],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+            {
+                "description": "Ativar modo estrito de impressão",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            }
+        ],
+        "preLaunchTask": "compilar",
+        "miDebuggerPath": "/usr/bin/gdb"
+    }
+
+
+
+
+
+    ]
 }
