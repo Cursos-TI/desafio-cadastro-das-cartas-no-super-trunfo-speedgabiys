@@ -16,51 +16,61 @@ int main() {
 
     printf("Carta 1\n");
 	
-	printf("Digite a letra do estado: ");
-	scanf("%c", &estado);
+	printf("Digite a letra do estado: \n");
+	scanf(" %c", &estado);
 
-	printf("Digite o código da carta: ");
+	printf("Digite o código da carta: \n");
 	scanf("%s", codigo);
 	
-	printf("Digite o nome da cidade: ");
+	printf("Digite o nome da cidade: \n");
 	scanf("%s", cidade);
 	
-	printf("Digite a população: ");
+	printf("Digite a população: \n");
 	scanf("%d", &populacao);
 	
-	printf("Digite a área (em km2): ");
+	printf("Digite a área (em km2): \n");
 	scanf("%f", &area);
 	
-	printf("Digite o PIB (em bilhões): ");
+	printf("Digite o PIB (em bilhões): \n");
 	scanf("%f", &pib);
 	
-	printf("Digite o número de pontos_turísticos: ");
+	printf("Digite o número de pontos_turísticos: \n");
 	scanf("%d", &pontos_turisticos);
+
+	// Imprimir a carta 1
+
+	printf("Carta 1 \n - Estado: %c\n - Código: %s\n - Cidade: %s\n - População: %d\n", estado, codigo, cidade, populacao);
+	printf("Área: %f\n km2 - PIB: %f\n bilhões - Pontos turísticos: %d\n", area, pib, pontos_turisticos);
 	
 	// Cadastro da Carta 2
 
     printf("carta 2\n");
 	
-	printf("Digite a letra do estado: ");
-	scanf("%c", &estado);
+	printf("Digite a letra do estado: \n");
+	scanf(" %c", &estado);
 	
-	printf("Digite o código da carta: ");
+	printf("Digite o código da carta: \n");
 	scanf("%s", codigo);
 	
-	printf("Digite o nome da cidade: ");
+	printf("Digite o nome da cidade: \n");
 	scanf("%s", cidade);
 	
-	printf("Digite a população: ");
+	printf("Digite a população: \n");
 	scanf("%d", &populacao);
 	
-	printf("Digite a área (em km2): ");
+	printf("Digite a área (em km2): \n");
 	scanf("%f", &area);
 	
-	printf("Digite o PIB (em bilhões): ");
+	printf("Digite o PIB (em bilhões): \n");
 	scanf("%f", &pib);
 	
-	printf("Digite o número de pontos turísticos: ");
+	printf("Digite o número de pontos turísticos: \n");
 	scanf("%d", &pontos_turisticos);
-	
+
+	// Imprimir a carta 2
+
+	printf("Carta 2 \n - Estado: %c\n - Código: %s\n - Cidade: %s\n n - População: %d\n", estado, codigo, cidade, populacao);
+	printf("Área: %f\n km2 - PIB: %f\n bilhões - Pontos turísticos: %d\n", area, pib, pontos_turisticos);
+
 	return 0;
 }
