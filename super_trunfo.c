@@ -5,8 +5,8 @@ int main() {
 	// Estrutura da carta
 	
 	char estado;  // Uma letra de A a H (Representa um dos oito estados).
-	char codigo;  // A letra do estado seguida do número de 01, a 04 (ex: A01, B03).
-	char cidade[4];  // O nome da cidade.
+	char codigo[5];  // A letra do estado seguida do número de 01, a 04 (ex: A01, B03).
+	char cidade[50];  // O nome da cidade.
 	int populacao;  // O número de habitantes da cidade.
 	float area;  // Área da cidade em quilometros quadrados.
 	float pib;  // O produto interno bruto da cidade.
@@ -17,50 +17,50 @@ int main() {
     printf("Carta 1\n");
 	
 	printf("Digite a letra do estado: ");
-	scanf("Estado: %c\n", &estado);
+	scanf("%c", &estado);
 
 	printf("Digite o código da carta: ");
-	scanf("Código: %s\n", &codigo);
+	scanf("%s", codigo);
 	
 	printf("Digite o nome da cidade: ");
-	scanf("Cidade: %s\n", cidade);
+	scanf("%s", cidade);
 	
 	printf("Digite a população: ");
-	scanf("População:%d\n", &populacao);
+	scanf("%d", &populacao);
 	
 	printf("Digite a área (em km2): ");
-	scanf("area: %f\n", &area);
+	scanf("%f", &area);
 	
 	printf("Digite o PIB (em bilhões): ");
-	scanf("PIB: %f\n", &pib);
+	scanf("%f", &pib);
 	
 	printf("Digite o número de pontos_turísticos: ");
-	scanf("Pontos Turísticos: %d\n", &pontos_turisticos);
+	scanf("%d", &pontos_turisticos);
 	
 	// Cadastro da Carta 2
 
     printf("carta 2\n");
 	
 	printf("Digite a letra do estado: ");
-	scanf("Estado: %c\n", &estado);
+	scanf("%c", &estado);
 	
 	printf("Digite o código da carta: ");
-	scanf("Código: %s\n", &codigo);
+	scanf("%s", codigo);
 	
 	printf("Digite o nome da cidade: ");
-	scanf("Cidade: %s\n", cidade);
+	scanf("%s", cidade);
 	
 	printf("Digite a população: ");
-	scanf("População: %d\n", &populacao);
+	scanf("%d", &populacao);
 	
 	printf("Digite a área (em km2): ");
-	scanf("Área: %f\n", &area);
+	scanf("%f", &area);
 	
 	printf("Digite o PIB (em bilhões): ");
-	scanf("PIB: %f\n", &pib);
+	scanf("%f", &pib);
 	
 	printf("Digite o número de pontos turísticos: ");
-	scanf("Pontos Turísticos: %d\n", &pontos_turisticos);
+	scanf("%d", &pontos_turisticos);
 	
 	return 0;
 }
