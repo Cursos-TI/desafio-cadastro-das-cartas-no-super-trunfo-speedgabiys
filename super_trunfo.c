@@ -11,6 +11,7 @@ int main() {
 	float area;  // Área da cidade em quilometros quadrados.
 	float pib;  // O produto interno bruto da cidade.
 	int pontos_turisticos;  // A quantidade de pontos turísticos na cidade.
+	char buffer[100];  // Buffer para armazenar a string lida.
 	
 	// Cadrastro da Carta 1
 
@@ -21,9 +22,14 @@ int main() {
 
 	printf("Digite o código da carta: \n");
 	scanf("%s", codigo);
-	
+
+	fgets(cidade, 50, stdin);
 	printf("Digite o nome da cidade: \n");
-	scanf("%s", cidade);
+	scanf("%[^\n]s", cidade);
+	//scanf("%s", cidade);
+	//scanf("%[^\n]s", buffer);
+	//strcpy(cidade, buffer);
+	//cidade[strcspn(cidade, "\n")] = 0;
 	
 	printf("Digite a população: \n");
 	scanf("%d", &populacao);
@@ -52,8 +58,13 @@ int main() {
 	printf("Digite o código da carta: \n");
 	scanf("%s", codigo);
 	
+	fgets(cidade, 50, stdin);
 	printf("Digite o nome da cidade: \n");
-	scanf("%s", cidade);
+	scanf("%[^\n]s", cidade);
+	//scanf("%s", cidade);
+	//scanf("%[^\n]s", buffer);
+	//strcpy(cidade, buffer);
+	//cidade[strcspn(cidade, "\n")] = 0;
 	
 	printf("Digite a população: \n");
 	scanf("%d", &populacao);
